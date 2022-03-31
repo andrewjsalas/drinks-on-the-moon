@@ -1,9 +1,15 @@
-import { Link } from 'react-router-dom'
 
-
-const Cocktail = ({ id, name, alcohol, glass, img}) => {
+const Cocktail = ({ id, name, glass, alcohol, img, ingredient }) => {
   return (
-    <div>Cocktail</div>
+    <div className='cocktail-card'>
+      <img
+        src={img}
+        alt='drink'
+        className='card-img' />
+      <div className='card-body'>
+        <h2>{name}</h2>
+      </div>
+    </div>
   )
 }
 

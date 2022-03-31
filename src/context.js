@@ -8,7 +8,7 @@ let AppContext = React.createContext()
 
 const AppProvider = ({ children }) => {
   const [data, setData] = useState([])
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(null)
   const [searchTerm, setSearchTerm] = useState("a")
 
   // Fetch cocktail data
@@ -20,7 +20,7 @@ const AppProvider = ({ children }) => {
 
       let { drinks } = resJson
       if (drinks) {
-        let newCocktail = drinks
+      let newCocktail = drinks
 
         .map((item) => {
           let {
@@ -56,7 +56,7 @@ const AppProvider = ({ children }) => {
   }, [searchTerm, fetchData])
 
   return (
-    <AppContext.Provider value={{ loading, searchTerm, setSearchTerm, data}}>
+    <AppContext.Provider value={{ loading, searchTerm, setSearchTerm, data }}>
       {children}
     </AppContext.Provider>
   )
