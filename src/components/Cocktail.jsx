@@ -1,15 +1,8 @@
+import React from 'react'
 
-const Cocktail = ({ id, name, glass, alcohol, img, ingredient }) => {
+function Cocktail() {
   return (
-    <div className='cocktail-card'>
-      <img
-        src={img}
-        alt='drink'
-        className='card-img' />
-      <div className='card-body'>
-        <h2>{name}</h2>
-      </div>
-    </div>
+    <div>Cocktail</div>
   )
 }
 

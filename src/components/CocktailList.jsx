@@ -1,15 +1,8 @@
-import Cocktail from "./Cocktail"
-import { useGlobal } from "../context"
+import React from 'react'
 
-const CocktailList = () => {
-  let { data } = useGlobal()
-
+function CocktailList() {
   return (
-    <div className="card-grid">
-      {data.map((item) => {
-        return <Cocktail key={item.id} {...item} />
-      })}
-    </div>
+    <div>CocktailList</div>
   )
 }
 

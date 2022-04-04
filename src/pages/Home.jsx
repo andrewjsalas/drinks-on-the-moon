@@ -1,27 +1,8 @@
-import { useGlobal } from "../context"
-import Search from "../components/Search"
-import Cocktail from "../components/Cocktail"
-import Navbar from "../components/Navbar"
+import React from 'react'
 
-const Home = () => {
-  let { loading } = useGlobal()
-
+function Home() {
   return (
-    <div className="home-container">
-      <div>
-        <Navbar />
-      </div>
-      <div>
-        <Search />
-      </div>
-      <div>
-        { loading ? (
-          <span>Loading...</span>
-        ) : (
-          <Cocktail />
-        )}
-      </div>
-    </div>
+    <div>Home</div>
   )
 }
 
