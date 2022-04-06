@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&display=swap');
+
+/* Root Variables */
+:root {
+  --grayBlue1: #121c24;
+  --grayBlue2: #151F28;
+  --coffee: #6F513C;
+  --darkBrown: #1E1D1E;
+  --eerieBlack: #161A1E;
+  --graniteGray: #6F6560;
+  --middleGray: #8D8077;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+

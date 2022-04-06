@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import CocktailList from "../components/CocktailList"
 import SearchBar from '../components/SearchBar'
+import styled from "styled-components"
 
 function Home() {
   const [loading, setLoading] = useState(false)
@@ -46,11 +47,15 @@ function Home() {
   }, [searchTerm])
 
   return (
-    <main>
+    <HomePage>
       <SearchBar setSearchTerm={setSearchTerm} />
       <CocktailList loading={loading} cocktails={cocktails} />
-    </main>
+    </HomePage>
   )
 }
+
+const HomePage = styled.main`
+  background-color: #151F28;
+`
 
 export default Home
