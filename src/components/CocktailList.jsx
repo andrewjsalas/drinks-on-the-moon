@@ -11,8 +11,8 @@ const CocktailList = ({ cocktails, loading }) => {
   if (cocktails.length < 1) {
     return (
       <LoadingMessage>
-      No cocktails matched your search criteria
-    </LoadingMessage>
+        No cocktails matched your search criteria
+      </LoadingMessage>
     )   
   }
 
@@ -45,8 +45,8 @@ const GridHeader = styled.h2`
 `
 const GridItems = styled.div`
   display: grid;
-  margin: 0 auto;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+  justify-content: center;
   grid-gap: 2rem;
 `
 

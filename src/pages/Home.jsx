@@ -22,14 +22,14 @@ function Home() {
             const {
               idDrink, 
               strDrink, 
-              strDrinkThumnb,
+              strDrinkThumb,
               strAlcoholic,
               strGlass,
             } = item
             return {
               id: idDrink, 
               name: strDrink,
-              image: strDrinkThumnb,
+              image: strDrinkThumb,
               info: strAlcoholic,
               glass: strGlass,
             }
