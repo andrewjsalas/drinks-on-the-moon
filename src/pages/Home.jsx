@@ -55,7 +55,7 @@ function Home() {
 }
 
 const HomePage = styled.main`
-  background-color: #151F28;
+background: #1A1F23;
 `
 
 export default Home

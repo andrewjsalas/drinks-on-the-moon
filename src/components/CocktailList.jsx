@@ -29,18 +29,20 @@ const CocktailList = ({ cocktails, loading }) => {
 }
 
 const LoadingMessage = styled.h2`
+  padding-top: 3rem;
   color: white;
 `
 
 const GridContainer = styled.div`
   heigth: 100vh;
   width: 80%;
-  margin: 5rem auto 0 auto;
+  margin: 2rem auto 0 auto;
   text-align: center;
 `
 
 const GridHeader = styled.h2`
-  font-size: 3rem;
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
   color: white;
 `
 const GridItems = styled.div`
@@ -48,6 +50,7 @@ const GridItems = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
   justify-content: center;
   grid-gap: 2rem;
+  padding-bottom: 4rem;
 `
 
 

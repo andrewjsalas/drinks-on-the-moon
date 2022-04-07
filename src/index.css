@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&display=swap');
+/* Fira Sans */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Source+Serif+Pro&display=swap');
+/* Oswald, Source Serif Pro */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+/* Josefin Sans */
 
 /* Root Variables */
 :root {
@@ -16,6 +21,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  background: #1A1F23;
 }
 
 body {

@@ -23,9 +23,9 @@ const Cocktail = ({ image, name, id, info, glass }) => {
 }
 
 const CocktailCard = styled.div`
-  border: 1px solid red;
-  margin: 2rem 0;
-  background-color: #DAD4D2;
+  background-color: #F6F4F4;
+  box-shadow: 0 0 10px;
+  transition: 
 `
 
 const CocktailImage = styled.img`
@@ -50,13 +50,19 @@ const CocktailInfo = styled.div`
 
 const RecipeLink = styled.div`
   margin: .8rem 0;
-  background-color: #35271D;
+  background-color: #161A1E;
   padding: 0.2rem;
   border-radius: 10px;
+  
 
   a {
     text-decoration: none;
     color: white;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+    color: #998D85;
+    }
   }
 `
 
