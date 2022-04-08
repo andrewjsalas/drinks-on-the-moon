@@ -47,9 +47,9 @@ const SearchHeader = styled.h2`
   padding-top: 8rem;
   text-align: center;
   font-size: 2.5rem;
-  font-family: 'Source Serif Pro', sans-serif;
+  font-family: 'Noto Serif Display', sans-serif;
   font-style: italic;
-  font-weight: 300;
+  font-weight: 400;
   border-bottom: 2px solid #998D85;
 `
 

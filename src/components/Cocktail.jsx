@@ -35,14 +35,18 @@ const CocktailImage = styled.img`
 const CocktailInfo = styled.div`
   padding: .5rem;
 
-  h3 {
+  // Name
+  h2 {
     margin: .5rem 0;
+    font-style: bold;
   }
 
+  // Glass
   h4 {
     margin: .5rem 0;
   }
 
+  // Info
   p {
     margin: .5rem 0;
   }
@@ -53,16 +57,14 @@ const RecipeLink = styled.div`
   background-color: #161A1E;
   padding: 0.2rem;
   border-radius: 10px;
-  
+  transition: 0.2s ease-in-out;
+  &:hover {
+    opacity: 90%;
+  }
 
   a {
     text-decoration: none;
-    color: white;
-    transition: all 0.2s ease-in-out;
-
-    &:hover {
-    color: #998D85;
-    }
+    color: beige;
   }
 `
 

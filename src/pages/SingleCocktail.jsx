@@ -108,45 +108,78 @@ const SingleDrinkPage = styled.div`
 `
 
 const ReturnHomeButton = styled.div`
+  display: flex;
   justify-content: center;
+  margin: 0 auto;
   margin-top: 8rem;
   margin-bottom: 2rem;
   text-align: center;
-  background: black;
+  
   width: 25%;
-  border-radius: 10px;
+  min-width: 632px;
+  text-transform: uppercase;
 
   a { 
     text-decoration: none;
-    color: white;
-    font-size 2rem;
+    letter-spacing: 0.3rem;
+    font-size 1.5rem;
+    padding: 0.5rem;
+    font-family: 'Oswald', sans-serif;
+    background: beige;
+    color: black;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      background: black;
+      color: beige;
+    }
   }
 `
 
 const SingleDrinkContainer = styled.div`
-  display: grid;
+  display: flex;
   justify-content: center;
+  margin: 0 auto;
+  max-width: 1400px;
+  align-items: center;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    max-width: 30rem;
+  }
 `
 
 const SingleDrinkImage = styled.img`
-  height: 30rem;
-  width: 30rem;
-  
+  max-width: 30rem;
+  height: auto;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
 `
 
 const SingleDrinkInfo = styled.div`
   color: white;
   margin-top: 2rem;
-  text-align: left;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  margin: 0 auto;
+  padding: 2rem;
 
   h3 {
-    margin: 1rem 0;
-    padding: 1rem 0;
+    margin: 2rem 0;
+
   }
 
   p {
-    margin: 1rem 0;
+    margin: 1.3rem 0;
+
+  }
+
+  strong {
+    color: beige;
+  }
+
+  @media (max-width: 800px) {
+    padding: 0;
   }
 `
 
