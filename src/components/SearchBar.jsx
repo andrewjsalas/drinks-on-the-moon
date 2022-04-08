@@ -62,11 +62,20 @@ const FormControl = styled.div`
   input {
     width: 80%;
     boxing-sizing: border-box;
-    outline: none;
+    border: none;
     padding 0.5rem;
     border-radius: 10px;
     margin: auto;
+    transition: 0.3s ease-in-out;
+    background-color: #ededed;
+
+    &:focus {
+    outline: 2px solid black;
+    padding 0.8rem;
+    background-color: white;
+    }
   }
+  
 `
 
 const FormLabel = styled.label`

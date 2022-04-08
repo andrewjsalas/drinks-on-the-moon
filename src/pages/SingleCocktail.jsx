@@ -1,5 +1,6 @@
 import { Link, useParams } from "react-router-dom"
 import { useState, useEffect } from "react"
+import styled from "styled-components"
 
 const SingleCocktail = () => {
   // Hook to grab url parameters
@@ -74,11 +75,17 @@ const SingleCocktail = () => {
     } = cocktail
 
     return (
-      <div className="single-drink-container">
-        <Link to='/' className="return-home-btn">Back Home</Link>
-        <div className="single-drink">
-          <img src={image} alt={name} />
-          <div className="single-drink-info">
+      <SingleDrinkPage>
+
+        <ReturnHomeButton>
+          <Link to='/' className="return-home-btn">
+            <h4>Back Home</h4>
+          </Link>
+        </ReturnHomeButton>
+
+        <SingleDrinkContainer>
+          <SingleDrinkImage src={image} alt={name} />
+          <SingleDrinkInfo>
             <h3><strong>Name:</strong> {name}</h3>
             <p><strong>Drink Type:</strong> {category}</p>
             <p><strong>Glass:</strong> {glass}</p>
@@ -88,12 +95,59 @@ const SingleCocktail = () => {
               })}
             </p>
             <p><strong>Instructions:</strong> {instructions}</p>
-          </div>
-        </div>       
-      </div>
+          </SingleDrinkInfo>
+        </SingleDrinkContainer>       
+      </SingleDrinkPage>
 
     )
   }
 }
+
+const SingleDrinkPage = styled.div`
+  margin: 1.5rem;
+`
+
+const ReturnHomeButton = styled.div`
+  justify-content: center;
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  background: black;
+  width: 25%;
+  border-radius: 10px;
+
+  a { 
+    text-decoration: none;
+    color: white;
+    font-size 2rem;
+  }
+`
+
+const SingleDrinkContainer = styled.div`
+  display: grid;
+  justify-content: center;
+`
+
+const SingleDrinkImage = styled.img`
+  height: 30rem;
+  width: 30rem;
+  
+`
+
+const SingleDrinkInfo = styled.div`
+  color: white;
+  margin-top: 2rem;
+  text-align: left;
+  font-size: 1.5rem;
+
+  h3 {
+    margin: 1rem 0;
+    padding: 1rem 0;
+  }
+
+  p {
+    margin: 1rem 0;
+  }
+`
 
 export default SingleCocktail

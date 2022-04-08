@@ -59,8 +59,6 @@ const NavMenu = styled.ul`
   position: relative;
   text-decoration: none;
 
-  
-
   li {
     list-style: none;
     transition: all 0.3s ease-in-out;
