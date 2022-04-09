@@ -4,11 +4,13 @@ import Home from "./pages/Home";
 import About from './pages/About'
 import SingleCocktail from './pages/SingleCocktail'
 import Navbar from './components/Navbar'
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <>
       <Router>
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path='/' element={ <Home/> } />

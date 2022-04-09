@@ -70,8 +70,7 @@ const FormControl = styled.div`
     background-color: #ededed;
 
     &:focus {
-    outline: 2px solid black;
-    padding 0.8rem;
+    transform: scale(1.1);
     background-color: white;
     }
   }

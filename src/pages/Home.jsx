@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import CocktailList from "../components/CocktailList"
 import SearchBar from '../components/SearchBar'
 import styled from "styled-components"
+import ScrollToTop from "../components/ScrollToTop"
 
 
 function Home() {
