@@ -1,7 +1,10 @@
+import { useState } from "react"
 import { Link } from "react-router-dom"
 import styled from "styled-components"
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false)
+
   return (
 
     <Nav>
@@ -9,7 +12,13 @@ function Navbar() {
         Drinks on the Moon
       </Logo>
 
-      <NavMenu>
+      <Hamburger onClick={() => setIsOpen(!isOpen)}>
+        <span />
+        <span />
+        <span />
+      </Hamburger>
+      
+      <NavMenu isOpen={isOpen}>
           <Link to='/'>
             <li>Home</li>
           </Link>
@@ -17,9 +26,7 @@ function Navbar() {
             <li>About</li>
           </Link>
       </NavMenu>
-      <Hamburger></Hamburger>
-      <Hamburger></Hamburger>
-      <Hamburger></Hamburger>
+      
     </Nav>
   )
 }
@@ -38,6 +45,21 @@ const Nav = styled.nav`
 `
 const Hamburger = styled.span`
   display: none;
+  flex-direction: column;
+  cursor: pointer;
+
+  span {
+    height: 2px;
+    width: 25px;
+    background-color: white;
+    margin-bottom: 4px;
+    border-radius: 5px;
+    align-items: center;
+  }
+
+  @media (max-width: 700px) {
+    display: flex;
+  }
 `
 
 // Logo Style
@@ -58,6 +80,14 @@ const NavMenu = styled.ul`
   flex-flow: row nowrap: 
   position: relative;
   text-decoration: none;
+
+  @media (max-width: 700px) {
+    overflow: hidden;
+    flex-direction: column;
+    width: 100%;
+    max-height: ${({ isOpen }) => (isOpen ? '300px' : '0')};
+    transition: max-height 0.3s ease-in-out;
+  }
 
   li {
     list-style: none;

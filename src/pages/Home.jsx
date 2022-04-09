@@ -3,6 +3,7 @@ import CocktailList from "../components/CocktailList"
 import SearchBar from '../components/SearchBar'
 import styled from "styled-components"
 
+
 function Home() {
   const [loading, setLoading] = useState(false)
   const [searchTerm, setSearchTerm] = useState('a')
