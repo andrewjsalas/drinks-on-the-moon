@@ -6,6 +6,7 @@ import SingleCocktail from './pages/SingleCocktail'
 import Navbar from './components/Navbar'
 import ScrollToTop from "./components/ScrollToTop";
 
+
 function App() {
   return (
     <>
@@ -14,7 +15,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' element={ <Home/> } />
-          <Route path='/about' element={ <About/> } />
+          <Route exact path='/about' element={ <About/> } />
           <Route path='/cocktail/:id' element={ <SingleCocktail/> } />
         </Routes>
       </Router>

@@ -2,14 +2,13 @@ import { useState, useEffect } from "react"
 import CocktailList from "../components/CocktailList"
 import SearchBar from '../components/SearchBar'
 import styled from "styled-components"
-import ScrollToTop from "../components/ScrollToTop"
-
 
 function Home() {
   const [loading, setLoading] = useState(false)
   const [searchTerm, setSearchTerm] = useState('a')
   const [cocktails, setCocktails,] = useState([])
 
+  // Grab drink data from API
   useEffect(() => {
     setLoading(true)
     async function getDrinks() {

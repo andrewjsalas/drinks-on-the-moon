@@ -19,7 +19,7 @@ const SearchBar = ({ setSearchTerm }) => {
     <SearchMain>
       <SearchHeader>The Bartenders Guide to Mixoligy</SearchHeader>
 
-      <SearchBarContainer>
+      <SearchBarContainer onSubmit={handleSubmit}>
         <FormControl>
           <FormLabel htmlFor="name">Search a cocktail</FormLabel>
           <input 
@@ -72,9 +72,9 @@ const FormControl = styled.div`
     &:focus {
     transform: scale(1.1);
     background-color: white;
+    outline: none;
     }
   }
-  
 `
 
 const FormLabel = styled.label`

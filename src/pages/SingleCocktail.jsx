@@ -114,7 +114,6 @@ const ReturnHomeButton = styled.div`
   margin-top: 8rem;
   margin-bottom: 2rem;
   text-align: center;
-  
   width: 25%;
   min-width: 632px;
   text-transform: uppercase;

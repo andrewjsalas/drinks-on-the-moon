@@ -9,7 +9,9 @@ function Navbar() {
 
     <Nav>
       <Logo>
-        Drinks on the Moon
+        <Link to='/'>
+          <h3>The Drunken Spirits</h3>
+        </Link>  
       </Logo>
 
       <Hamburger onClick={() => setIsOpen(!isOpen)}>
@@ -64,12 +66,19 @@ const Hamburger = styled.span`
 
 // Logo Style
 const Logo = styled.h3`
-  display: flex;
-  padding: 1rem 0;
-  font-weight: 800;
-  font-size: 1.8rem;
-  color: white;
-  font-family: 'Oswald', sans-serif;
+  h3 {
+    display: flex;
+    padding: 1rem 0;
+    font-weight: 800;
+    font-size: 1.8rem;
+    color: white;
+    font-style: none;
+    font-family: 'Lobster', sans-serif;
+  }
+    
+  a {
+    text-decoration: none;
+  } 
 `
 
 // Menu Style
@@ -104,11 +113,8 @@ const NavMenu = styled.ul`
     padding: 1rem 2rem;
     cursor: pointer;
     font-size: 1.5rem;
-    color: white
+    color: beige;
   } 
 `
-
-
-
 
 export default Navbar
