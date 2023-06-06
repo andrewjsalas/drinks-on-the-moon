@@ -14,6 +14,7 @@ function Navbar() {
         </Link>  
       </Logo>
 
+      {/* Hamburger icon for smaller screens */}
       <Hamburger onClick={() => setIsOpen(!isOpen)}>
         <span />
         <span />
@@ -113,7 +114,7 @@ const NavMenu = styled.ul`
     padding: 1rem 2rem;
     cursor: pointer;
     font-size: 1.5rem;
-    color: beige;
+    color: white;
   } 
 `
 
