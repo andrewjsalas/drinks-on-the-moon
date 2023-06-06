@@ -2,12 +2,14 @@ import React from 'react'
 import Cocktail from './Cocktail'
 import styled from 'styled-components'
 
+// Displays a list of cocktails
 const CocktailList = ({ cocktails, loading }) => {
   if (loading) {
     return ( 
       <LoadingMessage>Loading...</LoadingMessage>
     )
   }
+  
   if (cocktails.length < 1) {
     return (
       <LoadingMessage>
