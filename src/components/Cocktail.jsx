@@ -25,14 +25,16 @@ const Cocktail = ({ image, name, id, info, glass }) => {
 const CocktailCard = styled.div`
   background-color: #F6F4F4;
   box-shadow: 0 0 10px;
-  transition: 0.4s ease-in-out;
+  border-radius: 22px;
+  transition: 0.3s ease-in-out;
   &:hover {
-    box-shadow: 0 0 10px 5px;
+    box-shadow: 0 0 20px 5px;
   }
 `
 
 const CocktailImage = styled.img`
   max-width: 100%;
+  border-radius: 20px 20px 0 0;
 `
 
 const CocktailInfo = styled.div`

@@ -85,7 +85,7 @@ const SingleCocktail = () => {
         </ReturnHomeButton>
 
         <SingleDrinkContainer>
-          
+
           <SingleDrinkImage src={image} alt={name} />
 
           <SingleDrinkInfo>
@@ -146,7 +146,6 @@ const SingleDrinkContainer = styled.div`
   margin: 0 auto;
   max-width: 1400px;
   align-items: center;
-  border-radius: 20px;
 
   @media (max-width: 800px) {
     flex-direction: column;
@@ -158,7 +157,7 @@ const SingleDrinkImage = styled.img`
   max-width: 30rem;
   height: auto;
   margin: 0 auto;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+  box-shadow: 0 4px 20px 4px rgba(0,0,0,0.8);
 `
 
 const SingleDrinkInfo = styled.div`
