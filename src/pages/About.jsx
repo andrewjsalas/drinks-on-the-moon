@@ -45,7 +45,7 @@ const AboutHeader = styled.h3`
 const AboutLinks = styled.h4`
   margin: 0 auto;
   margin-top: 5rem;
-  font-size 3rem;
+  font-size: 3rem;
 
   h4 {
     margin: 1rem;

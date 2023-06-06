@@ -121,7 +121,7 @@ const ReturnHomeButton = styled.div`
   a { 
     text-decoration: none;
     letter-spacing: 0.3rem;
-    font-size 1.5rem;
+    font-size: 1.5rem;
     padding: 0.5rem;
     font-family: 'Oswald', sans-serif;
     background: beige;

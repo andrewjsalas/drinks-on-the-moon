@@ -5,7 +5,7 @@ import styled from "styled-components"
 
 function Home() {
   const [loading, setLoading] = useState(false)
-  const [searchTerm, setSearchTerm] = useState('a')
+  const [searchTerm, setSearchTerm] = useState('')
   const [cocktails, setCocktails,] = useState([])
 
   // Grab drink data from API

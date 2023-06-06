@@ -86,7 +86,7 @@ const NavMenu = styled.ul`
   align-items: center;
   display: flex;
   justify-content: space-between;
-  flex-flow: row nowrap: 
+  flex-flow: row nowrap; 
   position: relative;
   text-decoration: none;
 
