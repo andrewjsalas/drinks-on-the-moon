@@ -34,7 +34,7 @@ const LoadingMessage = styled.h2`
 `
 
 const GridContainer = styled.div`
-  heigth: 100vh;
+  height: 100vh;
   width: 80%;
   margin: 2rem auto 0 auto;
   text-align: center;

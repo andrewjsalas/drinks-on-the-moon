@@ -8,12 +8,12 @@ function About() {
     <AboutContainer>
       <AboutHeader>
         This website was made using 
-          <a href='https://www.thecocktaildb.com/' target='_blank'> TheCocktailDB </a> 
+          <a href='https://www.thecocktaildb.com/' rel="noopener noreferrer" target='_blank'> TheCocktailDB </a> 
         API by Andrew J Salas
       </AboutHeader>
       <AboutLinks>
         <h4>My Portfolio</h4>
-        <a href="http://www.andrewjsalasdev.com/" target='_blank'>
+        <a href="http://www.andrewjsalasdev.com/" rel="noopener noreferrer" target='_blank'>
           <FontAwesomeIcon icon={faImagePortrait}></FontAwesomeIcon>
         </a>  
       </AboutLinks>
@@ -45,7 +45,7 @@ const AboutHeader = styled.h3`
 const AboutLinks = styled.h4`
   margin: 0 auto;
   margin-top: 5rem;
-  font-size 3rem;
+  font-size: 3rem;
 
   h4 {
     margin: 1rem;

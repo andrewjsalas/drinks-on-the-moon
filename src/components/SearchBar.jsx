@@ -61,9 +61,9 @@ const SearchBarContainer = styled.form`
 const FormControl = styled.div`
   input {
     width: 80%;
-    boxing-sizing: border-box;
+    box-sizing: border-box;
     border: none;
-    padding 0.5rem;
+    padding: 0.5rem;
     border-radius: 10px;
     margin: auto;
     transition: 0.3s ease-in-out;

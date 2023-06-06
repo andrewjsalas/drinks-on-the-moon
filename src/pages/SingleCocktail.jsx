@@ -5,7 +5,6 @@ import styled from "styled-components"
 const SingleCocktail = () => {
   // Hook to grab url parameters
   const { id } = useParams()
-  
   const [loading, setLoading] = useState(false)
   const [cocktail, setCocktail] = useState(null) 
 
@@ -17,8 +16,8 @@ const SingleCocktail = () => {
           `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${id}`
         )
 
-        // Set drink data
         const data = await response.json()
+        // Check if cocktail data is available and get relevant information
         if(data.drinks) {
           const {
             strDrink: name, 
@@ -33,6 +32,8 @@ const SingleCocktail = () => {
             strIngredient4, 
             strIngredient5, 
           } = data.drinks[0]
+
+          // Create a new cocktail object
           const ingredients = [
           strIngredient1, 
           strIngredient2, 
@@ -84,7 +85,9 @@ const SingleCocktail = () => {
         </ReturnHomeButton>
 
         <SingleDrinkContainer>
+
           <SingleDrinkImage src={image} alt={name} />
+
           <SingleDrinkInfo>
             <h3><strong>Name:</strong> {name}</h3>
             <p><strong>Drink Type:</strong> {category}</p>
@@ -96,6 +99,7 @@ const SingleCocktail = () => {
             </p>
             <p><strong>Instructions:</strong> {instructions}</p>
           </SingleDrinkInfo>
+
         </SingleDrinkContainer>       
       </SingleDrinkPage>
 
@@ -121,7 +125,7 @@ const ReturnHomeButton = styled.div`
   a { 
     text-decoration: none;
     letter-spacing: 0.3rem;
-    font-size 1.5rem;
+    font-size: 1.5rem;
     padding: 0.5rem;
     font-family: 'Oswald', sans-serif;
     background: beige;
@@ -153,7 +157,7 @@ const SingleDrinkImage = styled.img`
   max-width: 30rem;
   height: auto;
   margin: 0 auto;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+  box-shadow: 0 4px 20px 4px rgba(0,0,0,0.8);
 `
 
 const SingleDrinkInfo = styled.div`
